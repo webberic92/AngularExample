@@ -1,0 +1,67 @@
+
+
+Created accounts at the following.
+
+heroku.com
+gitscm.com
+nodejs.org
+
+installed npm @angluar/cli
+
+created new folder job in D drive
+NG new job1 <------ sets up a blank angular app
+
+
+D:\job>git config --global user.email "webberic92@yahoo.com" <---- set up email.
+
+
+job1 folder ran NG serve <------- starts up development server
+
+
+localhost:4200
+
+used GIT
+Made first commit went to REMOTE and hit ADD.
+
+
+created new name and made a locatoin to my GIT hub repository angularexmpale
+https://github.com/webberic92/AngularExample.git 
+
+connected heroku to github via deploy tab
+automatic deploy and deploy branch
+
+In heroku hit open app but did not work
+
+
+*******Found article to help.*******
+https://medium.com/@hellotunmbi/how-to-deploy-angular-application-to-heroku-1d56e09c5147
+
+**had to add **
+"postinstall":"ng build --aot -prod"
+under scripts in job1/package.json file.
+under dependcies     "@angular/cli": "^6.1.0",
+under dependcies "typescript": "~2.9.2"
+
+Comit the heroku support
+
+npm install express path --save
+
+**Article to help for MAPS angular API***
+
+http://angular-ui.github.io/angular-google-maps/#!/quickstart
+
+
+
+**google API Docs**
+
+http://angular-ui.github.io/angular-google-maps/#!/api/GoogleMapApi
+
+npm i -s @types/googlemaps
+
+
+
+https://medium.com/@balramchavan/integrating-google-maps-in-angular-5-ca5f68009f29
+
+
+
+
