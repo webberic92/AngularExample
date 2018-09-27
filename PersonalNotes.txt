@@ -78,4 +78,10 @@ https://medium.com/@balramchavan/integrating-google-maps-in-angular-5-ca5f68009f
 
 
 
+Numverify API KEY  8166753344334393009c3dba387a9bc3
 
+
+http://apilayer.net/api/validate
+    ? access_key = 8166753344334393009c3dba387a9bc3
+    & number = 13864906637
+                
