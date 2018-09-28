@@ -11,13 +11,15 @@ import {NumverifyService} from './numverify.service';
 export class AppComponent{
   constructor(private numverify: NumverifyService){}
   public details;
+  public detailsObject;
   public phone: string;
 
   getPhoneDetails(){
     this.numverify.getDetails(this.phone).subscribe(response => {
-      this.details = JSON.stringify(response);
+      this.detailsObject = response;
+      this.details = JSON.stringify(this.detailsObject);
     })
-
+    this.phone = "";
     console.log(this.phone);
   }
 
