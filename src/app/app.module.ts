@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
+import { NumverifyService } from './numverify.service';
+
 import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
@@ -15,7 +17,7 @@ import { AgmCoreModule } from '@agm/core';
       apiKey: 'AIzaSyD-hQQ5GWM4qKfRsqY7c8-oeNlNH5FHLJU'
     })
   ],
-  providers: [],
+  providers: [NumverifyService],
   declarations: [ AppComponent ],
   bootstrap: [ AppComponent ]
 })
@@ -27,7 +29,7 @@ export class AppModule {}
 
 
 
-
+ 
 
 
 
