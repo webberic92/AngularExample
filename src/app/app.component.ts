@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import {NumverifyService} from './numverify.service';
+
 
 @Component({
   selector: 'app-root',
@@ -6,8 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.css'],
 })
 
-export class AppComponent {
-  title: string = 'Google Maps Example 2018';
-  lat: number = 29.207033;
-  lng: number = -81.057931;
+export class AppComponent{
+  constructor(private numverify: NumverifyService){}
+  public details;
+  public phone: string;
+
+  getPhoneDetails(){
+    this.numverify.getDetails(this.phone).subscribe(response => {
+      this.details = JSON.stringify(response);
+    })
+
+    console.log(this.phone);
+  }
 }
