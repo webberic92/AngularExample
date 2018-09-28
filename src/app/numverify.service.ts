@@ -9,7 +9,7 @@ export class NumverifyService {
   constructor(private http: HttpClient) { }
   
   getDetails(param){
-    return this.http.get('http://apilayer.net/api/validate?access_key=8166753344334393009c3dba387a9bc3&number='+param);
+    return this.http.get('https://apilayer.net/api/validate?access_key=8166753344334393009c3dba387a9bc3&number='+param);
   }
 
 }

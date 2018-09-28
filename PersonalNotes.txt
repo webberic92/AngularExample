@@ -6,8 +6,8 @@ Technical Requirements:
 ----------clears form after submission. 
 ------------Use either tfvc or git for version control. 
 -------------Commit several times throughout the development process. 
-Host exercise somewhere publicly accessible and in working order. 
-Provide us a link to the hosted application. 
+-------------Host exercise somewhere publicly accessible and in working order. 
+--------------Provide us a link to the hosted application. (--)
 Provide us a link to the repository. 
 
 
