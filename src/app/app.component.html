@@ -3,7 +3,7 @@
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon1"></span>
       </div>
-      <input type="text" class="form-control" placeholder="Example 13864906637" [(ngModel)]="phone">
+      <input type="text" class="form-control" placeholder="Example 13864906637" (keypress)="numberOnly($event)" [(ngModel)]="phone">
       <button type="button" class="btn btn-primary" (click)="getPhoneDetails()" data-toggle="modal" data-target="#exampleModal">Submit</button>
   </div>
 
